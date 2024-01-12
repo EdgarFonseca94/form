@@ -1,4 +1,4 @@
-body {
+body,html {
     padding: 0;
     margin: 0;
 }
@@ -11,12 +11,12 @@ body {
     height: 100%;
     width: 40vw;
     position: relative;
+    min-width: 300px;
 }
 .flex-right {
     flex: 1 1 auto;
     height: 100%;
     width: 60vw;
-    background-color: aquamarine;
 }
 .flex-left img {
     height: 100%;
@@ -28,8 +28,33 @@ body {
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100px;
+    color: white;
+    font-size: 50px;
 }
-#logo-text {
-    color:aliceblue;
-    opacity: 1;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+.wrapper img {
+    height: 80px;
+    width: 50px;
+    padding-right: 10px;
+}
+.flex-right .content {
+    height: calc(100vh / 3);
+}
+.flex-right div:nth-child(odd){
+    background-color: rgb(231, 231, 231);
+}
+div.flex-right div:nth-child(even) {
+    box-shadow: 0 10px 10px -10px black;
+    position: relative;
+}
+#header-text {
+    font-size: 25px;
+    width: 400px;
+    font-family: 'Gill Sans Extrabold', sans-serif;
 }
