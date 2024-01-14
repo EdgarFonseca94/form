@@ -21,10 +21,35 @@
         <div class="flex-right">
             <div class="content">
                 <div id="header-text">
-                    Have you been dreaming of your next vacation? Do you want a relaxing environment? Then look no further. Sign up now.
+                    Have you been dreaming of your next vacation? Do you want a relaxing environment? Then look no further. Sign up now!
                 </div>
             </div>
-            <div class="content">content</div>
+            <div class="content">
+                <fieldset>
+                    <legend>Reservation Information</legend>
+
+                    <form>
+                        <label for="first_name">First Name:</label>
+                        <input type="Text" id="first_name" name="first_name" required>
+
+                        <label for="last_name">Last Name:</label>
+                        <input type="Text" id="last_name" name="last_name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                        
+                        <label for="package">Activity Package</label>
+                        <select name="package">
+                            <option value="basic_package">Basic Package(Entrance Only for 2) - $89.99</option>
+                            <option value="group package"> Gold Package(Includes Lunch for 2) - $139.99</option>
+                            <option value="family_package">Platinum Package(Includes Lunch for 2 + Private Cabana with Drinks) - $189.99</option>
+                        </select>
+                    </form>
+                </fieldset>
+            </div>
             <div class="content">content</div>
         </div>
     </div>
