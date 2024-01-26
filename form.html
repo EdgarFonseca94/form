@@ -29,28 +29,43 @@
                     <legend>Reservation Information</legend>
 
                     <form>
-                        <label for="first_name">First Name:</label>
-                        <input type="Text" id="first_name" name="first_name" required>
+                        <div class="grid-container">
+                            <div class="input-container">
+                                <label for="first_name">*First Name:</label>
+                                <input type="Text" id="first_name" name="first_name" required>
+                            </div>
+                            
+                            <div class="input-container">
+                                <label for="last_name">*Last Name:</label>
+                                <input type="Text" id="last_name" name="last_name" required>
+                            </div>
 
-                        <label for="last_name">Last Name:</label>
-                        <input type="Text" id="last_name" name="last_name">
+                            <div class="input-container">
+                                <label for="email">*Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                            <div class="input-container">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="input-container">
+                                <label for="password">*Password:</label>
+                                <input type="password" id="password" name="paswword" equired>
+                            </div>
 
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone">
-                        
-                        <label for="package">Activity Package</label>
-                        <select name="package">
-                            <option value="basic_package">Basic Package(Entrance Only for 2) - $89.99</option>
-                            <option value="group package"> Gold Package(Includes Lunch for 2) - $139.99</option>
-                            <option value="family_package">Platinum Package(Includes Lunch for 2 + Private Cabana with Drinks) - $189.99</option>
-                        </select>
+                            <div class="input-container">
+                                <label for="confirm-password">*Confirm Password:</label>
+                                <input type="password" id="confirm-password" name="confirm-paswword" required>
+                            </div>
+                        </div>
                     </form>
                 </fieldset>
             </div>
-            <div class="content">content</div>
+            <div class="content">
+                <button type="submit">Sumbit</button>
+            </div>
         </div>
     </div>
 </body>
